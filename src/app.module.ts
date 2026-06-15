@@ -7,6 +7,7 @@ import { BookingsModule } from './bookings/bookings.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { TicketModule } from './ticket/ticket.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       }),
     }),
     AuthModule,
+    TicketModule,
   ],
   controllers: [AppController],
   providers: [AppService],
